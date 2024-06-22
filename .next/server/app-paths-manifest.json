@@ -1,1 +1,9 @@
-{}
+{
+  "/page": "app/page.js",
+  "/properties/[id]/page": "app/properties/[id]/page.js",
+  "/properties/add/page": "app/properties/add/page.js",
+  "/properties/page": "app/properties/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/properties/user/[userId]/route": "app/api/properties/user/[userId]/route.js"
+}

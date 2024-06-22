@@ -10,7 +10,6 @@ export const metadata={
     keywords:'rental, find rentals, find properties'
 }
 const MainLayout = ({ children }) => {
-   console.log("Hello world. I am Wobetu")
   return (
     <AuthProvider>
       <html>

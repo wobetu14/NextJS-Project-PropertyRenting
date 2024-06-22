@@ -28,7 +28,6 @@ async function fetchProperties(){
             return [];
         }
         const res = await fetch(`${apiDomain}/properties/${id}`);
-        console.log(res);
   
         if(!res.ok){
             throw new Error("Failed to fetch data.")

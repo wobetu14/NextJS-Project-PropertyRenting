@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import PropertyDetails from './PropertyDetails'
 import {FaArrowLeft} from 'react-icons/fa'
+import PropertyImages from './PropertyImages'
 
 const PropertyImageHeader = ({image, property}) => {
   return (
@@ -12,7 +13,7 @@ const PropertyImageHeader = ({image, property}) => {
             <div className="container-xl m-auto">
                 <div className="grid grid-cols-1">
                 <Image
-                    src={`/images/properties/${image}`}
+                    src={image}
                     alt=""
                     className="object-cover h-[400px] w-full"
                     width={0}
@@ -128,6 +129,8 @@ const PropertyImageHeader = ({image, property}) => {
                 </div>
             </div>
     </section>
+
+    <PropertyImages images={property.images} />
     </>
   )
 }

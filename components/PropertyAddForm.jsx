@@ -4,27 +4,27 @@ import React, { useEffect, useState } from 'react'
 const PropertyAddForm = () => {
     const [mounted, setMounted]=useState(false);
     const [fields, setFields]=useState({
-      type:'Apartment',
-      name:'Test Property',
+      type:'',
+      name:'',
       description:'',
       location:{
         street:'',
-        city:'Test City',
-        state:'Test State',
+        city:'',
+        state:'',
         zipcode:''
       },
-      beds:'3',
-      baths:'2',
-      square_feet:'1800',
+      beds:'',
+      baths:'',
+      square_feet:'',
       amenities:[],
       rates:{
         weekly:'',
-        monthly:'2000',
+        monthly:'',
         nightly:''
       },
       seller_info:{
         name:'',
-        email:'test@test.com',
+        email:'',
         phone:''
       },
 
@@ -57,8 +57,6 @@ const PropertyAddForm = () => {
           [name]:value
         }))
       }
-
-      console.log(fields);
     };
     const handleAmenitiesChange=(e)=>{
       const {value, checked}=e.target;
@@ -449,7 +447,7 @@ const PropertyAddForm = () => {
 
             <div className="mb-4 bg-blue-50 p-4">
               <label className="block text-gray-700 font-bold mb-2"
-                >Rates (Leave blank if not applicable)</label
+                >Prices (Leave blank if not applicable)</label
               >
               <div
                 className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4"
