@@ -54,7 +54,7 @@ const PropertySchema=new Schema({
         required:true,
     },
 
-    amenties:[
+    amenities:[
         {
             type:String,
         }
