@@ -1,12 +1,7 @@
 {
   "/page": "app/page.js",
-  "/properties/page": "app/properties/page.js",
   "/properties/[id]/page": "app/properties/[id]/page.js",
+  "/properties/page": "app/properties/page.js",
   "/properties/add/page": "app/properties/add/page.js",
-  "/profile/page": "app/profile/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/api/properties/[id]/route": "app/api/properties/[id]/route.js",
-  "/api/bookmarks/check/route": "app/api/bookmarks/check/route.js",
-  "/api/bookmarks/route": "app/api/bookmarks/route.js",
-  "/api/properties/route": "app/api/properties/route.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }
